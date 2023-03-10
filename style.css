@@ -1,0 +1,30 @@
+@font-face {
+  font-family: news-custom;
+  src: url(./fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: news-custom;
+}
+/* -----------------------header section------------------ */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-box img {
+  padding: 10px;
+}
+.nav-box {
+  margin-top: 15px;
+}
+.nav-box a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 18px 25px 10px;
+}
+.nav-box a:hover {
+  color: rgb(241, 94, 80);
+}
