@@ -1,12 +1,16 @@
-@font-face {
-  font-family: news-custom;
+/* @font-face {
+  font-family: news;
   src: url(./fonts/Inter-VariableFont_slnt\wght.ttf);
-}
+} */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: news-custom;
+  font-family: "Inter", sans-serif;
+}
+body {
+  padding: 20px;
+  /* font-family: news; */
 }
 /* -----------------------header section------------------ */
 header {
@@ -14,7 +18,7 @@ header {
   justify-content: space-between;
 }
 .logo-box img {
-  padding: 10px;
+  padding: 10px 50px;
 }
 .nav-box {
   margin-top: 15px;
@@ -22,9 +26,89 @@ header {
 .nav-box a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 17px;
   padding: 18px 25px 10px;
 }
 .nav-box a:hover {
   color: rgb(241, 94, 80);
+}
+/* ------------------------hero section--------------------- */
+.hero {
+  margin-top: 20px;
+  margin-right: 20px;
+  min-height: 80vh;
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "a a b"
+    "c d b";
+}
+
+.one {
+  grid-area: a;
+}
+.one img {
+  width: 100%;
+  padding-left: 50px;
+}
+.two {
+  grid-area: b;
+  background-color: rgb(0, 0, 26);
+  /* color: white; */
+}
+.container-cell-two {
+  padding: 20px;
+}
+.two-mini {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.two h1 {
+  color: rgb(233, 171, 83);
+  font-size: 35px;
+  font-weight: 70px;
+  padding: 15px;
+}
+.two h3 {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+}
+.two h3:hover {
+  color: rgb(233, 171, 83);
+  cursor: pointer;
+}
+.two p {
+  color: rgb(187, 187, 187);
+  font-size: 15px;
+  line-height: 28px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.three {
+  grid-area: c;
+  font-size: 30px;
+  padding: 20px 50px;
+  color: rgb(0, 0, 26);
+}
+.four {
+  grid-area: d;
+  color: rgb(53, 53, 53);
+  font-size: 15px;
+  line-height: 25px;
+  padding: 15px;
+  font-weight: 520;
+  margin-top: 8px;
+}
+.four input {
+  color: white;
+  background: rgb(241, 94, 80);
+  padding: 13px 20px;
+  letter-spacing: 5px;
+  border: none;
+  margin-top: 25px;
+}
+.four input:hover {
+  background-color: rgb(0, 0, 26);
+  cursor: pointer;
 }
