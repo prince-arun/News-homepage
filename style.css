@@ -20,6 +20,9 @@ header {
 .logo-box img {
   padding: 10px 50px;
 }
+#icon-menu {
+  display: none;
+}
 .nav-box {
   margin-top: 15px;
 }
@@ -176,6 +179,14 @@ header {
     left: 15px;
     padding: 0;
   }
+  #icon-menu {
+    width: 45px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 380px;
+  }
   .nav-box {
     display: none;
     margin-top: 0;
@@ -183,7 +194,7 @@ header {
   .one {
   }
   .one img {
-    width: 450px;
+    width: 410px; /* ------ 450px to 410px */
     padding-left: 0px;
     height: 350px;
     position: absolute;
@@ -230,7 +241,7 @@ header {
     left: 15px;
   }
   .container-cell-two {
-    padding: 0px;
+    padding: 25px; /* 0px to 25px*/
   }
   .two-mini {
     padding-top: 10px;
@@ -260,7 +271,7 @@ header {
   }
   /* --------------------------------------------------- */
   .sub_news {
-    margin-top: 70px;
+    margin-top: 20px; /* 70px to 20px*/
     margin-left: 0px;
     position: relative;
     top: 800px;
